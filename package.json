@@ -1,5 +1,5 @@
 {
-  "name": "next-app",
+  "name": "nextjs-auth-ready-template",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,12 +8,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.0.8",
+    "@hapi/iron": "^6.0.0",
+    "axios": "^0.25.0",
+    "bcrypt": "^5.0.1",
+    "cookie": "^0.4.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.1.7",
+    "next": "12.0.9",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sharp": "^0.29.3"
   },
   "devDependencies": {
     "eslint": "8.7.0",
-    "eslint-config-next": "12.0.8"
+    "eslint-config-next": "^12.0.9"
   }
 }
