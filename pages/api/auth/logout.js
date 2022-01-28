@@ -20,7 +20,7 @@ async function logout(req, res) {
 
   await dbConnect();
 
-  const user = req.session.user || {};
+  const { user } = req.session;
   const token = cookie.parse(req.headers.cookie || '')[SESSION_COOKIE_NAME];
 
   try {

@@ -10,11 +10,11 @@ async function user(req, res) {
 
   await dbConnect();
 
-  const sessionUser = req.session.user || {};
+  const { user: sessionUser } = req.session;
 
   let user = null;
   try {
-    if (sessionUser._id) {
+    if (sessionUser) {
       user = await User.findById(sessionUser._id);
     }
   } catch (error) {
